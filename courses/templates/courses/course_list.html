@@ -1,0 +1,9 @@
+{% extends 'courses/base.html' %}
+{% block content %}
+  <h1>Course List View Page</h1>
+<!--This template will be rendered against a context
+#containing a variable called object_list that contains all the model objects.-->
+  {% for object in object_list %}
+    <a href = "{{object.get_absolute_url }}">{{ object}}</a>
+  {% endfor %}
+{% endblock content%}

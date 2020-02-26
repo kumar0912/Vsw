@@ -24,8 +24,8 @@ of the course model code that we have i.e allowed_memberships = models.ManyToMan
           {% else %}
             <small>*This is your current membership</small>
           {% endifnotequal %}
-          <input type = "hidden" name = "membership_type" value ="{{
-            object.membership_type }} ">
+          <input type = "hidden" name = "membership_type"
+          value = "{{ object.membership_type }} ">
           </form>
         {% endifnotequal %}
       </div>

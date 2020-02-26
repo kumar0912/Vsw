@@ -116,14 +116,16 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATICFILES_DIRS = [
-os.path.join(BASE_DIR,'videosubscription/static/')
-]
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+STATICFILES_DIRS = [
+os.path.join(BASE_DIR,'static_root'),
+]
+VENV_PATH = os.path.dirname(BASE_DIR)
+STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(VENV_PATH,'media_root')
+
 
 
 if DEBUG:
@@ -132,5 +134,5 @@ if DEBUG:
 
 else:
     #LIVE KEYS
-    STRIPE_PUBLISHABLE_KEY ='pk_test_0MKsJD3EMgKS7l9BIFSluyUA00M3lptlVP'
-    STRIPE_SECRET_KEY = 'sk_test_MrOPOBz2eg7e793VaWNelrki00ZiinUZHI'
+    STRIPE_PUBLISHABLE_KEY =''
+    STRIPE_SECRET_KEY = ''

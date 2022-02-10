@@ -17,7 +17,7 @@ cupshelpers==1.0
 cycler==0.10.0
 defer==1.0.6
 distro-info===0.18ubuntu0.18.04.1
-Django==2.2.4
+Django==2.2.27
 Flask==0.12.2
 Flask-BabelEx==0.9.3
 Flask-Gravatar==0.4.2
